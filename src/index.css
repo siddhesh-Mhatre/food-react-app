@@ -1,0 +1,1092 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/*  */
+  opacity: 0;
+  animation: fadeInAnimation ease  1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+header {
+  width: 100%;
+  background: whitesmoke;
+
+  position: sticky;
+
+  z-index: 11;
+  /* background: linear-gradient(to bottom, #ff57223d 0%, #cc99ff4f 100%); */
+  transition: all 0.4s ease 0s;
+}
+
+header .container {
+  max-width: 1200px;
+  padding-left: 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header h2 {
+  font-weight: 450;
+  font-family: cursive;
+  text-decoration: none;
+  margin: 0;
+  font-size: 22px;
+  margin-left: 9px;
+  margin-top: 10px;
+  color: midnightblue;
+  text-shadow: 1px 1px 6px #00000087;
+}
+
+.menu-icon {
+  width: 28px;
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* padding: 20px 0; */
+  padding: 15px 11px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+#MenuItems {
+  display: inline-block;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 15px;
+}
+.left-info .fa {
+  padding-right: 6px !important;
+}
+
+nav ul li a {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  /* color: #ff9800; */
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+  margin-top: 5px;
+  text-decoration: none;
+}
+nav ul li :hover {
+  /* border-bottom: 2px solid;
+  color: #a4c639; */
+  text-shadow: 0px 4px 4px black;
+}
+.log {
+  font-size: 2.5rem !important;
+  position: absolute !important;
+  right: 66px !important;
+  top: -5px !important;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.gift {
+  background: green;
+  color: white !important;
+  padding: 4px 16px;
+  border-radius: 23px;
+  font-size: 18px;
+  border-bottom: none;
+  outline: none;
+}
+
+/* main banner */
+.main-banner {
+  border-bottom: 10px solid #222222;
+}
+
+.main-banner .img1 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  /* linear-gradient(89deg, rgba(230, 219, 219, 0.062), */
+
+  background: linear-gradient(269deg, rgb(8 8 9 / 44%), #121212b8),
+    url(C:/react-project7/react-web-project/src/images/img7.jpg);
+}
+
+.main-banner .text-conttent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  color: #f7fcff;
+  width: 50%;
+  text-align: left;
+}
+.main-banner .text-conttent h1 {
+  font-size: 3rem;
+  width: 70%;
+  margin-bottom: 13px;
+  text-shadow: 0px 5px 4px #352b0e;
+}
+
+.main-banner .text-conttent p {
+  display: inline-block;
+  width: 70%;
+  font-size: 17px;
+}
+.btn {
+  padding: 10px 20px;
+  color: wheat;
+  background: chocolate;
+  border: 1px solid;
+  border-radius: 30px;
+  display: block;
+  text-decoration: none;
+  margin-right: 20rem;
+  font-size: 15px;
+  transition: 0.5s;
+}
+button.btn:hover {
+  background: #ff9800 ;
+}
+
+a.btn.active:hover {
+background-color: #ff9800;
+}
+/* Story */
+.our-story .container {
+  width: 85%;
+}
+
+.story-head {
+  text-align: center;
+  margin-bottom: 5rem;
+  /* border-block-start: 3px solid black; */
+}
+
+.story-head h1 {
+  /*margin-top: 0;
+  display: inline-block;
+  padding: 10px 85px;
+  background: #0d0e10;
+  color: antiquewhite;
+  font-size: 20px;*/
+  margin-top: 0;
+  display: inline-block;
+  padding: 3px 116px;
+  background: #222222;
+  color: antiquewhite;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 50px;
+}
+
+.story-img {
+  width: 50%;
+  margin: auto;
+}
+
+.story-img img {
+  width: 100%;
+}
+
+.story-down-content {
+  text-align: center;
+}
+
+.story-down-content h1 {
+  display: inline-block;
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+.story-down-content p {
+  width: 50%;
+  margin: auto;
+  font-size: 14px;
+  color: #504f4f;
+  line-height: 23px;
+}
+
+/* cover */
+.bg-img2 {
+  margin-top: 140px;
+  width: 100%;
+  background-image: url(C:/react-project7/react-web-project/src/images/img5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 10px solid #222222;
+}
+
+.row-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 7rem;
+}
+
+.B_1 {
+  width: 330px;
+  height: 330px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  border: 19px solid #f1f7f3;
+  background: #00000052;
+  border-image: linear-gradient(to bottom, #ff5722, rgba(0, 0, 0, 0)) 1 100%;
+}
+.B_1 h1 {
+  transform: rotate(44deg);
+  position: absolute;
+  top: 124px;
+  left: 24px;
+  margin: 0;
+  bottom: -35px;
+  height: 48px;
+  font-size: 2rem;
+  width: 282px;
+  right: 65px;
+  color: antiquewhite;
+}
+
+.B_1 h6 {
+  transform: rotate(44deg);
+  position: absolute;
+  top: 173px;
+  left: 36px;
+  margin: 11px;
+  /* bottom: -47px; */
+  /* height: 13px; */
+  font-size: 1.2rem;
+  /* width: 149px; */
+  right: 65px;
+  display: inline-table;
+}
+.B_1 h6 a {
+  color: white;
+  text-decoration: none;
+  padding: 9px 15px;
+  background: #ff5722;
+  border-radius: 23px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+/* Reservation */
+.Reservation {
+  border-bottom: 10px solid #222222;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+input[type="date"] {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 3px solid #222222;
+}
+
+input[type="time"] {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 3px solid #222222;
+}
+
+select#size {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 3px solid #222222;
+}
+
+.food-imgs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 8rem;
+}
+.food-imgs .F_IG {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #f8f8f800;
+}
+.food-imgs img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.F-down-content {
+  position: absolute;
+  top: 41%;
+  left: 35%;
+}
+
+/* input[type="submit"] {
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 3px solid #222222;
+  background: #222222;
+  color: aliceblue;
+} */
+
+.MuiButton-containedPrimary {
+  background-color: #222222 !important;
+  padding: 15px 20px !important;
+}
+
+.MuiPopover-paper {
+  top: 50% !important;
+  left: 50% !important;
+}
+
+.food-imgs .F_IG:hover {
+  filter: brightness(0.7);
+  color: white;
+}
+.center {
+  text-align: center;
+  margin-top: 51px;
+  margin-bottom: 58px;
+}
+
+/* Events */
+.Events {
+  margin-bottom: 5rem;
+}
+.Events .container {
+  width: 85%;
+  text-align: center;
+}
+.Events .container h1 {
+  font-size: 2.5rem;
+}
+.Events .container p {
+  width: 60%;
+  margin: auto;
+}
+
+.Events .container .btn-t {
+  padding: 10px 20px !important;
+  display: block;
+  width: 123px;
+  text-align: center;
+  margin: auto;
+  border: 2px solid #222222;
+  text-decoration: none;
+  color: black;
+  margin-top: 2rem;
+  transition: 0.3s;
+}
+
+.Events .container .btn-t:hover {
+  background: #232222;
+  color: white;
+}
+
+/* foooter */
+footer {
+  background: #222222;
+  /* margin-top: 5rem; */
+}
+
+input.btn-f {
+  padding: 10px 20px;
+  display: block;
+  width: 123px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  transition: 0.3s;
+  background: #222222;
+  color: white;
+  font-size: 17px;
+  border: 2px solid white;
+}
+input.btn-f:hover {
+  border-color: #222222;
+}
+footer .row {
+  align-items: center;
+}
+footer .container {
+  width: 93%;
+  padding-top: 3rem;
+}
+
+footer .container .center {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+footer .container .center h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.row .address ul {
+  width: 60%;
+  margin: auto;
+  line-height: 2rem;
+  color: white;
+}
+
+.row .address ul li {
+  margin-bottom: 1rem;
+}
+
+form.sub {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.from-2 {
+  text-align: center;
+}
+
+.from-2 h3 {
+  color: white;
+  font-size: 20px;
+}
+
+footer input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+
+  outline: none;
+  border-radius: 11px;
+  border: 2px solid white;
+  /* border-top: none;
+  border-left: none;
+  border-right: none; */
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+
+  outline: none;
+  border-radius: 11px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+footer input[type="sub"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+
+  outline: none;
+  border-radius: 11px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.cpy-right {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-basis: 10%;
+  justify-content: space-around;
+}
+
+/* ********** CONTACT */
+
+.conatact {
+  background-color: rgb(239 244 248);
+}
+
+.conatact .container {
+  width: 85%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.conatact .container h1{
+  margin-top: 0;
+  font-size: 3rem;
+    font-weight: 300;
+    border-bottom: 1px solid;
+}
+.conatact .row {
+  align-items: center;
+}
+.conatact .row .msg-icon {
+  flex-basis: 40%;
+}
+.conatact .row .msg-icon img {
+  width: 100%;
+}
+.conatact form {
+  flex-basis: 50%;
+}
+.conatact input[type="text"] {
+  width: 360px;
+  background: white;
+  color: #222222;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 8px;
+  outline: none;
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
+
+.conatact input[type="email"] {
+  width: 360px;
+  background: white;
+  color: #222222;
+}
+.conatact textarea {
+  background: white;
+  display: block;
+  width: 360px;
+  outline: none;
+  border-radius: 11px;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 11px;
+  margin: auto;
+  color: #222222;
+}
+.conatact .MuiButton-root {
+  margin-top: 16px;
+    width: 368px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 17px;
+}
+
+/************************************************ login */
+.account-page {
+  background: linear-gradient(to bottom, #33ccff12 0%, #ff99cc1c 100%);
+}
+.account-page .container{
+  width: 85%;
+  padding: 20px;
+}
+
+.account-page .container .row .login-img{
+  flex-basis: 25.5%;
+}
+
+.account-page .container .row .login-img img { 
+width: 100%;
+}
+.form-container{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  background: whitesmoke;
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form-container form {
+  max-width: 300px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+
+#login-form {
+  left: -300px;
+}
+#login-form a{
+  display: block;
+  margin-top: 12px;
+  color: black;
+}
+
+#Resgister-form{
+  left: 0;
+}
+#Resgister-form a{
+  display: block;
+  margin-top: 10px;
+}
+.form-container form input[type="text"],input[type="email"],input[type="password"] {
+  width: 230px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 8px;
+  outline: none;
+  border-radius: 12px;
+  border: 2px solid white;
+  color: black;
+  background-color: transparent;
+}
+
+.form-container form .btn{
+margin: auto;
+width: 130px;
+}
+.form-btn span{
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+
+hr#indicater {
+  width: 100px;
+  border: none;
+  background: #9e9e9e;
+  height: 3px;
+  margin-top: 8px;
+  transform: translate(100px);
+  transition: transform 1s;
+  transform: translateX(66px);
+}
+
+
+/* ************ Card */
+.card{
+  width: 17rem;
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+}
+
+.card img{
+  width: 100%;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  vertical-align: middle;
+
+}
+.card-body{
+  padding: 0.8rem;
+}
+.card-body .card-title{
+margin: 0;
+margin-top: 5px;
+}
+  
+.card-body .card-text{
+  margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.card .btn{
+  width: 123px;
+  margin: 0;
+}
+
+
+/* Order Food */
+.order-food .container{
+  width: 90%;
+}
+
+.mb{
+margin-bottom: 5rem;
+}
+.card-heading{
+  font-weight: 300;
+  font-size: 2rem;
+  color: chocolate;
+  margin-bottom: 10px;
+}
+
+.react-multi-carousel-item {
+  width: 320px !important;
+}
+
+
+
+
+/************************************************************************************** responsive */
+@media only screen and (max-width: 900px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    height: 350px;
+    left: 0;
+    background: whitesmoke;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 0;
+    height: 50px;
+    border-top: 1px solid #9e9e9e29;
+    width: 100%;
+    padding: 8px;
+  }
+  nav ul li a {
+    /* color: #a4c639; */
+    color: maroon;
+    display: inline-block;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #MenuItems {
+    margin-top: 1rem;
+  }
+  header h2 {
+    margin-left: 1rem;
+  }
+
+  header .container {
+    width: auto;
+  }
+  nav ul {
+    padding: 0;
+  }
+  .log {
+    display: none !important;
+  }
+  li:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  /* main banner */
+  .main-banner .text-conttent {
+    width: 100%;
+  }
+  .btn {
+    margin-right: 8rem;
+  }
+
+  /* story */
+  .our-story .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .story-img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .story-down-content p {
+    width: 90%;
+  }
+
+  .B_1 {
+    width: 88%;
+    transform: perspective(10px);
+  }
+
+  /* reservation */
+  .row {
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+  }
+  .food-imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .F-down-content {
+    left: 20%;
+  }
+
+  .story-head h1 {
+    padding: 3px 69px;
+  }
+  input[type="date"] {
+    width: 60%;
+    margin: auto;
+  }
+  input[type="time"] {
+    width: 60%;
+    margin: auto;
+  }
+  select#size {
+    width: 71%;
+    margin: auto;
+  }
+   
+
+  /* Events */
+  .Events .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Events .container p {
+    width: 85%;
+    margin: auto;
+  }
+
+  /* footer */
+  footer .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cpy-right {
+    flex-direction: column;
+    text-align: center;
+  }
+  .row .address ul {
+
+list-style: none;
+padding: 0;
+  }
+
+/****  contact   *****/
+.conatact .MuiButton-root {
+margin-bottom: 34px;
+}
+.conatact input[type="text"]{
+  width: 315px;
+}
+
+.conatact input[type="email"] {
+  width: 315px;
+}
+.conatact textarea {
+width: 315px;
+}
+
+/************** Login */
+
+.account-page .container .row{
+  flex-direction: column-reverse;
+  padding: 30px 0px;
+}
+.form-container{
+  margin: auto;
+  transform: scale(1.2);
+}
+.account-page .container .row .login-img img {
+  display: none;
+}
+
+
+/* gift card */
+
+.order-food{
+  width: 90%;
+  margin: auto;
+}
+.order-food .container{
+  width: 100%;
+/* changes */
+margin-left: 1rem;
+margin-right: 1rem;
+padding: 0;
+}
+
+.react-multi-carousel-item {
+   width: 354px !important;
+}
+.react-multiple-carousel__arrow {
+display: none !important;
+}
+
+
+
+/* cart */
+.cart-cards .container {
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+
+}
+
+/* media query for below 400 */
+@media only screen and (max-device-width: 480px) {
+  .form-container {
+     width: 285px;
+     transform: scale(1.1);
+}
+}
+
+
+
+/* utils */
+.row-c {
+  display: flex;
+  flex-direction: column;
+}
+
+li:last-child:hover {
+  border-bottom: 0;
+}
+
+
+
+
+/********** shopping-carts  (Gift.js)*/
+.shop-div .container .shop-btn{
+  padding: 8px !important;
+  margin-left: 1rem;
+}
+.shop-div{
+  text-align: end;
+  padding: 1px;
+
+}
+.shop-div .container{
+width: 85%;
+padding: 20px;
+padding-bottom: 0;
+}
+
+/* carts  (carts.js)*/
+.cart-cards .container{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    width: 90%;
+    place-items: center;
+}
+
+
+
+/*  */
+
+.add-minus-quantity {
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  padding: 2px;
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 0;
+  padding-left: 10px
+}
+
+.add-minus-quantity button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-minus-quantity input {
+  width: 3rem;
+  height: 2rem;
+  border: 0.141rem solid var(--primary-color);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin: 0 7px;
+
+  outline: none;
+  background-color: transparent;
+  border: 1px solid black;
+  border-top: none;
+  border-bottom: none;
+}
+
+
+.fade_pass{
+  border: 1px solid black !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important; 
+  display: block;
+  width: 100px !important;
+  outline: black;
+}
+
+.order-btn{
+  display: block;
+    padding: 3px 17px;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+
+.fa-plus:hover {
+  color: #42c157;
+}
+
+.fa-minus:hover {
+  color: #ffb800;
+}
+
+.fa-plus,
+.fa-minus {
+  color: var(--icon-color);
+}
+
+.fa{
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+
+/* shopping-carts  (app.js)*/
+.shop-div .container .shop-btn{
+  padding: 8px !important;
+  margin-left: 1rem;
+}
+.shop-div{
+  text-align: end;
+  padding: 1px;
+
+}
+.shop-div .container{
+width: 85%;
+padding: 20px;
+padding-bottom: 0;
+}
+
+/* carts  (carts.js)*/
+.cart-cards .container{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    width: 90%;
+    place-items: center;
+}
+
+
