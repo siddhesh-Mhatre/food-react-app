@@ -43,10 +43,6 @@ console.log(tot);
                         >
                           Remove
                         </button>
-                       
-                        {/* <button className="btn" onClick={order}>
-                          Order Now
-                        </button> */}
                         <OrderNow prod_detail={product}/>
                       </div>
                     </div>

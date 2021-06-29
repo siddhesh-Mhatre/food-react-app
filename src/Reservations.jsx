@@ -68,7 +68,7 @@ const click=(event)=>{
 
               <input type="time"  step="900"  name='time'  onChange={inputEvent} value={Data.time}/>
 
-              <select name="size" id="size" name='size'  onChange={inputEvent} value={Data.size}>
+              <select name="size" id="size"   onChange={inputEvent} value={Data.size}>
                 <option value="-1" select="true">
                   Party Size
                 </option>

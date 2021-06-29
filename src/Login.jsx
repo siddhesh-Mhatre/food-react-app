@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
 import chef from "C:/react-project7/react-web-project/src/images/logol.png";
-
-
+import { NavLink } from "react-router-dom";
 
 
 const Login = () => {
@@ -29,7 +28,7 @@ const Login = () => {
         <div className="container">
           <div className="row">
             <div className="login-img">
-              <img src={chef} />
+              <img src={chef} alt=""/>
             </div>
 
             <div className="form-container">
@@ -42,7 +41,8 @@ const Login = () => {
               <input type="text" placeholder="Username" autoComplete="false"/>
               <input type="password" placeholder="Password" autoComplete="false"/>
               <button type="submit" className="btn">Login</button>
-              <a href="">Forget password</a>
+             
+              <NavLink to="#" >Forget password</NavLink>
               </form>
               <form id="Resgister-form" style={{ transform :Trans }}  >
               <input type="text" placeholder="Username" autoComplete="false" />
