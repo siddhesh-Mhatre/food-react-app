@@ -6,9 +6,12 @@ import Contact from './Contact';
 import Gift from './Gift';
 import Login from './Login';
 import Cart from './Cart';
+import DataProvider from './helper/Help';
 function App() {
   return (
     <>
+
+    <DataProvider> 
          <Navbar/>
     
 <Switch>
@@ -19,7 +22,7 @@ function App() {
 <Route  exact path="/cart" component={Cart} />
 <Redirect to="/" />
 </Switch>
-
+    </DataProvider> 
     </>
   );
 }

@@ -1,35 +1,35 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
 import Products from "./Products";
 import Cart from "./Cart";
-
+import { Help } from "./helper/Help";
 
 import Button from "@material-ui/core/Button";
 
 const PAGE_PRODUCTS = "products";
 const PAGE_CART = "cart";
 function App() {
-  const [cart, setCart] = useState([]);
+
+  const {addedItem,setAddedItem}=useContext(Help);
+ 
   const [page, setPage] = useState(PAGE_PRODUCTS);
 
   const addToCart = (product) => {
-    const found = cart.some((el) => el.id === product.id);
+    const found = addedItem.some((el) => el.id === product.id);
     if (!found) {
-      setCart([...cart, { ...product }]);
+      setAddedItem([...addedItem,product]);
     } else if (found) {
       alert("allredy added");
     }
   };
 
-  const removeFromCart = (productToRemove) => {
-    setCart(cart.filter((product) => product !== productToRemove));
-  };
+ 
 
   const navigateTo = (nextPage) => {
-    if (nextPage === "cart" && cart.length !== 0) {
+    if (nextPage === "cart" && addedItem.length !== 0) {
       setPage(nextPage);
     } else if (nextPage === "products") {
       setPage(nextPage);
-    } else if (nextPage === "cart" && cart.length === 0) {
+    } else if (nextPage === "cart" && addedItem.length === 0) {
       alert("add the item");
     }
   };
@@ -44,7 +44,7 @@ function App() {
             className="shop-btn"
             onClick={() => navigateTo(PAGE_CART)}
           >
-            Go to cart ({cart.length})
+            Go to cart ({addedItem.length})
           </Button>
 
           <Button
@@ -60,7 +60,7 @@ function App() {
       {page === PAGE_PRODUCTS && <Products addToCart={addToCart} />}
 
       {page === PAGE_CART && (
-        <Cart cart={cart} removeFromCart={removeFromCart} />
+        <Cart cart={addedItem} />
       )}
     </>
   );
