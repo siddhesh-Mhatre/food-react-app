@@ -46,7 +46,7 @@ export default function Products({ addToCart }) {
 
                       <div className="card">
                         <img
-                          className="card-img-top"
+                          className="card-img-top" 
                           src={product.img_}
                           alt=".."
                         />

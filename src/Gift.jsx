@@ -58,7 +58,7 @@ function App() {
         </div>
       </div>
       {page === PAGE_PRODUCTS && <Products addToCart={addToCart} />}
-
+ 
       {page === PAGE_CART && (
         <Cart cart={addedItem} />
       )}

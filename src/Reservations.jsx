@@ -86,7 +86,7 @@ const click=(event)=>{
             <Foodimg Img_={f12} Title="#pizza" />
             <Foodimg Img_={f13} Title={"#pizza"} />
             <Foodimg Img_={f14} Title={"#pizza"} />
-            <Foodimg Img_={f15} Title={"#pizza"} />
+            <Foodimg Img_={f15} Title={"#pizza"} /> 
             <Foodimg Img_={f16} Title={"#pizza"} />
   
             {expand

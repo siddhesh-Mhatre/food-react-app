@@ -26,7 +26,7 @@ const Pop = (props) => {
     return (
       <div>
         <Button type="submit" aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
-          Book now
+          Book now 
         </Button>
         <Popover
           id={id}

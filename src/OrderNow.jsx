@@ -95,7 +95,7 @@ function OrderNow(props) {
                   type="text"
                   name="add"
                   placeholder="Enter your address"
-                  required
+                  required 
                 />
                 <input
                   type="text"
