@@ -65,3 +65,4 @@ const {addedItem,removeItem,incQty,decQty}=useContext(Help);
 }
 
 export default Cart;
+
